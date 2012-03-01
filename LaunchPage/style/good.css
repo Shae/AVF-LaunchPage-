@@ -1,0 +1,58 @@
+
+
+
+/* .ui-page{
+	background: transparent url(images/BGtest4.png);
+}
+
+#footer1.1{
+	text-align: right;
+	font-size: 5px;
+}
+
+*/
+
+#1 {
+	position: center;
+	background-color: red;
+}
+.highlight {
+
+	background-color: rgba(253, 241, 170, 0.74);
+	border: 1px groove #000000;
+	-moz-box-shadow: 2px 2px 2px #000000;
+	-webkit-box-shadow: 2px 2px 2px #000000;
+	box-shadow: 2px 2px 2px #000000;
+}
+
+.bold{
+	
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+}
+.indent{
+	margin-left: 10px;
+	font-size: 10px;
+}
+#me{
+
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-left: 10px;
+	font: bold 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-shadow: none;
+	color: #ffffff;
+}
+#myclass{
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 10px;
+	margin-left: 10px;
+	text-shadow: none;
+	color: #fdfdfd;
+}
+
+.ui-collapsible-content{
+	text-shadow: none;
+}
