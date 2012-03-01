@@ -1,28 +1,55 @@
 
 
 
-/* .ui-page{
-	background: transparent url(images/BGtest4.png);
+
+
+#logo{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	-moz-box-shadow: 2px 2px 2px #000000;
+	-webkit-box-shadow: 2px 2px 2px #000000;
+	box-shadow: 2px 2px 2px #000000;
+	float: left;
 }
 
-#footer1.1{
-	text-align: right;
-	font-size: 5px;
+h1{
+	margin-bottom: 0;
+	color: #d3d0d0;
+	text-shadow: 2px 2px 2px #000000;
+	font-family: 14px Georgia, "Times New Roman", Times, serif;
 }
-
-*/
-
-#1 {
-	position: center;
-	background-color: red;
+h2{
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #d3d0d0;
+	text-shadow: 2px 2px 2px #000000;
+	font: italic 12px Georgia, "Times New Roman", Times, serif;
+}
+h3{
+	margin-top: 0;
+	color: #d3d0d0;
+	text-shadow: 2px 2px 2px #000000;
+	font: italic 12px Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 80px;
 }
 .highlight {
 
-	background-color: rgba(253, 241, 170, 0.74);
+	background-color: rgba(0, 0, 0, 0.45);
 	border: 1px groove #000000;
 	-moz-box-shadow: 2px 2px 2px #000000;
 	-webkit-box-shadow: 2px 2px 2px #000000;
 	box-shadow: 2px 2px 2px #000000;
+	color: #fbfbfb;
+
+}
+hr{
+
+	-moz-box-shadow: 2px 2px 1px #000000;
+	-webkit-box-shadow: 2px 2px 1px #000000;
+	box-shadow: 2px 2px 1px #000000;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .bold{
@@ -34,6 +61,7 @@
 .indent{
 	margin-left: 10px;
 	font-size: 10px;
+	color: #e4e2e2;
 }
 
 #me{
@@ -41,7 +69,7 @@
 	margin-bottom: 0;
 	padding-bottom: 0;
 	margin-right: 10px;
-	font: bold 10px "Lucida Grande", Lucida, Verdana, sans-serif;
+	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: none;
 	color: #ffffff;
 	text-align: right;
@@ -53,12 +81,18 @@
 	font-size: 10px;
 	margin-right: 10px;
 	text-shadow: none;
-	color: #fdfdfd;
+	color: #ffffff;
 	text-align: right;
 }
 
 .ui-collapsible-content{
 	text-shadow: none;
+}
+
+#list1{
+
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 .Qbtn{
