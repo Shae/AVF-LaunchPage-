@@ -35,24 +35,39 @@
 	margin-left: 10px;
 	font-size: 10px;
 }
+
 #me{
 
 	margin-bottom: 0;
 	padding-bottom: 0;
-	margin-left: 10px;
+	margin-right: 10px;
 	font: bold 10px "Lucida Grande", Lucida, Verdana, sans-serif;
 	text-shadow: none;
 	color: #ffffff;
+	text-align: right;
 }
+
 #myclass{
 	margin-top: 0;
 	padding-top: 0;
 	font-size: 10px;
-	margin-left: 10px;
+	margin-right: 10px;
 	text-shadow: none;
 	color: #fdfdfd;
+	text-align: right;
 }
 
 .ui-collapsible-content{
 	text-shadow: none;
+}
+
+.Qbtn{
+text-align: right;
+	display: block;
+}
+
+.cite{
+	margin-left: 15px;
+	font-size: 10px;
+	color: #966257;
 }
