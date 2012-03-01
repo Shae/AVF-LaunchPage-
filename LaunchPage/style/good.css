@@ -11,13 +11,22 @@
 	-webkit-box-shadow: 2px 2px 2px #000000;
 	box-shadow: 2px 2px 2px #000000;
 	float: left;
+	
 }
 
 h1{
-	margin-bottom: 0;
+	margin-bottom: 5;
 	color: #d3d0d0;
 	text-shadow: 2px 2px 2px #000000;
-	font-family: 14px Georgia, "Times New Roman", Times, serif;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+		background-color: rgba(0, 0, 0, 0.45);
+	border: 1px groove #000000;
+	-moz-box-shadow: 2px 2px 2px #000000;
+	-webkit-box-shadow: 2px 2px 2px #000000;
+	box-shadow: 2px 2px 2px #000000;
+	color: #fbfbfb;
+
 }
 h2{
 	margin-top: 0;
@@ -64,35 +73,20 @@ hr{
 	color: #e4e2e2;
 }
 
-#me{
-
-	margin-bottom: 0;
-	padding-bottom: 0;
-	margin-right: 10px;
-	font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;
-	text-shadow: none;
-	color: #ffffff;
-	text-align: right;
-}
-
-#myclass{
-	margin-top: 0;
-	padding-top: 0;
-	font-size: 10px;
-	margin-right: 10px;
-	text-shadow: none;
-	color: #ffffff;
-	text-align: right;
-}
-
 .ui-collapsible-content{
 	text-shadow: none;
 }
 
-#list1{
+/*.ui-content{
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
 
-	margin-top: 1px;
-	margin-bottom: 1px;
+}*/
+
+#list1{
+	margin: 0;
+	padding: 0;
 }
 
 .Qbtn{
