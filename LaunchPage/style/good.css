@@ -26,6 +26,8 @@ h1{
 	-webkit-box-shadow: 2px 2px 2px #000000;
 	box-shadow: 2px 2px 2px #000000;
 	color: #fbfbfb;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 }
 h2{
@@ -39,8 +41,14 @@ h3{
 	margin-top: 0;
 	color: #d3d0d0;
 	text-shadow: 2px 2px 2px #000000;
-	font: italic 12px Georgia, "Times New Roman", Times, serif;
-	margin-bottom: 80px;
+	font: italic 10px Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 60px;
+}
+h4{
+	text-align: center;
+	margin-right: 10px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.20);
 }
 .highlight {
 
@@ -98,4 +106,18 @@ text-align: right;
 	margin-left: 15px;
 	font-size: 10px;
 	color: #966257;
+}
+
+footer{
+	margin-bottom: 5;
+	text-shadow: none;
+	font: italic bold 12px Georgia, "Times New Roman", Times, serif;
+	background-color: rgba(0, 0, 0, 0.45);
+	border: 1px groove #000000;
+	-moz-box-shadow: 2px 2px 2px #000000;
+	-webkit-box-shadow: 2px 2px 2px #000000;
+	box-shadow: 2px 2px 2px #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-align: right;
 }
