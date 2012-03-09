@@ -23,7 +23,7 @@ function onSuccess(position) {
         //'Speed: '              + position.coords.speed                 + '<br />' +
         'Timestamp: '          + new Date(position.timestamp)          + '<br />';
     
-    initialize();
+    // initialize();
    
 }
 
@@ -63,13 +63,10 @@ $("#alertBtn").live("click", function(e) {
         // alert("Test Alert Message");
         // console.log("console message");
     window.alert("This is a test.  This is only a test of the iOS window ALERT system.");   
-    window.confirm("Looky!  A confirm button too!"); 
+   // window.confirm("Looky!  A confirm button too!"); 
 });
 
+
 $("#backBtn").live("click", function(e) {
-                    
-       goBack(){
        window.history.back()
-       }
-  
 });

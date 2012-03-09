@@ -11,7 +11,7 @@
 	
 }
 
-h1{
+#title{
 	margin-bottom: 5;
 	color: #d3d0d0;
 	text-shadow: 2px 2px 2px #000000;
@@ -27,6 +27,7 @@ h1{
 	padding-bottom: 10px;
 
 }
+
 
 h2{
 	margin-top: 0;
@@ -116,7 +117,8 @@ hr{
 #geoData{
     margin-top: 25%;
 }
-#geoData{
+
+#alertData{
     margin-top: 10%;
 }
 

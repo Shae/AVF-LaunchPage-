@@ -11,7 +11,7 @@
 	
 }
 
-h1{
+#title{
 	margin-bottom: 5;
 	color: #d3d0d0;
 	text-shadow: 2px 2px 2px #000000;
@@ -27,6 +27,7 @@ h1{
 	padding-bottom: 10px;
 
 }
+
 
 h2{
 	margin-top: 0;
@@ -78,6 +79,7 @@ hr{
 	font-weight: bold;
 	font-size: 12px;
 }
+
 .indent{
 	margin-left: 10px;
 	font-size: 10px;
@@ -88,12 +90,6 @@ hr{
 	text-shadow: none;
 }
 
-/*.ui-content{
-	text-shadow: none;
-	margin-top: 0px;
-	margin-bottom: 0px;
-
-}*/
 
 #list1{
 	margin: 0;
@@ -101,7 +97,7 @@ hr{
 }
 
 .Qbtn{
-text-align: right;
+    text-align: right;
 	display: block;
 }
 
@@ -109,6 +105,21 @@ text-align: right;
 	margin-left: 15px;
 	font-size: 10px;
 	color: #966257;
+}
+
+#geolocation{
+	color: white;
+	text-shadow: none;
+	font: italic 16px Georgia, "Times New Roman", Times, serif;
+    margin: 30px 10px 30px 10px;
+}
+
+#geoData{
+    margin-top: 25%;
+}
+
+#alertData{
+    margin-top: 10%;
 }
 
 footer{
