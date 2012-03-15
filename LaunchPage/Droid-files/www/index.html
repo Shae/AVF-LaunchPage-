@@ -1,229 +1,264 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-		<title>AVF-LaunchPage</title>	
-		<meta charset="utf-8" />
-		<meta name="description" content="Kids recognition kit" />
-		<meta name="keywords" content="Daycare, Kids, tracking" />
-		<meta name="robots" content="index, follow" />
-		<meta name="HandheldFriendly" content="true" />  	
+<head>
+<title>AVF-LaunchPage</title>
+<meta charset="utf-8" />
+<meta name="description" content="Kids recognition kit" />
+<meta name="keywords" content="Daycare, Kids, tracking" />
+<meta name="robots" content="index, follow" />
+<meta name="HandheldFriendly" content="true" />
 
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<meta name="viewport"
+	content="user-scalable=no, width=device-width, initial-scale=1.0" />
 
-		<!-- Mobile IE needs ClearType for smoothing fonts -->
-		<meta http-equiv="cleartype" content="on"/>		
-		
-		<!-- StyleSheets under here -->
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on" />
 
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
-        <link rel="stylesheet" href="style/good.css" type="text/css" />	
-            
-		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/modernizr.custom.min.js"></script>
-		
-    </head>
-    		<!-- ////////////////////////  Page Start  \\\\\\\\\\\\\\\\\\\\\\\\ -->    
-    
-    <body >
-        <div  data-role="page" id="home" >
-        <style type="text/css">.ui-page { background: transparent url(images/BGtest4.png);}</style>
-        
+<!-- StyleSheets under here -->
 
-        <header>
-            <img src="images/me.jpg" alt="logo" id="logo" />
-            <h1 id="title">AVF Launch Page</h1>
-            <h2>Shae B. R. Klusman</h2>
-            <h3>Class: AVF1203</h3>
-        </header>
-            <!-- <div data-role="content"> -->
-       
-       <hr/>		
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+<link rel="stylesheet" href="style/good.css" type="text/css" />
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/modernizr.custom.min.js" type="text/javascript"></script>
+
+</head>
+<!-- ////////////////////////  Page Start  \\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<body>
+	<div data-role="page" id="home"><style type="text/css"> .ui-page { background: transparent url(images/BGtest4.png) };</style>
+
+
+		<header>
+			<img src="images/me.jpg" alt="logo" id="logo" />
+			<h1 id="title">AVF Launch Page</h1>
+			<h2>Shae B. R. Klusman</h2>
+			<h3>Class: AVF1203</h3>
+		</header>
+	
+
+		 <hr/>		
+            <section id="apps" >
+                <div data-role="content" class="highlight">
+                    <div class="ui-grid-c" class="highlight">
+                        <div class="ui-block-a"  style="text-align: center;"><a data-rel="extrenal" target="_blank"  href="https://shae.cloudant.com/kidkoder/_design/kidkoder/index2.html"><img src="images/block.png" alt="" id="" class="holder"/> </a>
+                            <p>Old CRUD</p>
+                        </div>
+                        <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
+                            <p>New CRUD</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <hr/>
             <section id="features">
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >
-                    <div data-role="collapsible" class="highlight" > 
-                        <h2>C.R.U.D.  Apps</h2>					
-                            <div class="ui-grid-c" >
-                                <div class="ui-block-a"  style="text-align: center;"><a data-rel="extrenal" target="_blank"  href="https://shae.cloudant.com/kidkoder/_design/kidkoder/index2.html"><img src="images/block.png" alt="" id="" class="holder"/> </a>
-                                    <p>Old CRUD</p>
-                                </div>
-                                <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>New CRUD</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >
-                    <div data-role="collapsible" class="highlight"> 
-                        <h2>iOS/Android Native Features</h2>					
-                            <div class="ui-grid-c">
-                                <div class="ui-block-a" style="text-align: center;"><a href="#alertpg"><img src="images/PHolder.png" alt="" id="" class="holder"/></a>
-                                    <p>Alert</p>
-                                </div>
+                <div data-role="content" class="highlight">       					
+                    <div class="ui-grid-c">
+                        <div class="ui-block-a" style="text-align: center;"><a href="#alertpg"><img src="images/alert.png" alt="" id="" class="holder"/></a>
+                            <p>Alert</p>
+                        </div>
 
-                                <div class="ui-block-b"  style="text-align: center;"><a href="#geopg" ><img src="images/PHolder.png" alt="" id="" class="holder"/></a>
-                                    <p>Geo</p>
-                                </div>
+                        <div class="ui-block-b"  style="text-align: center;"><a href="#geopg" ><img src="images/geo.png" alt="" id="" class="holder"/></a>
+                            <p>Geo</p>
+                        </div>
 
-                            <!--    <div class="ui-block-c" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>Accelerometer</p> 
-       
-                                </div> -->
-                            </div>
+                         <div class="ui-block-c" style="text-align: center;"><a href="#accelpg"><img src="images/accel2.png" alt="" id="" class="holder"/></a>
+                            <p>Accelerometer</p>  
+                        </div>
+                        <div class="ui-block-a" style="text-align: center;"><a href="#camerapg"><img src="images/camera.png" alt="" id="" class="holder" /></a>
+                            <p>Camera</p>
+                        </div>
+                        <div class="ui-block-b" style="text-align: center;"><a href="#connectionpg"><img src="images/Network.png" alt="" id="" class="holder" /></a>
+                            <p>Network</p>
+                        </div>       
                     </div>
                 </div>
-            </div>
-            
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b">
-                    <div data-role="collapsible" class="highlight"> 
-                        <h2>Android Native Features</h2>					
-                            <div class="ui-grid-c">
-                                <div class="ui-block-a" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>Contacts</p>
-                                </div>
-                                <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>Camera</p>
-                                </div>
-                                <div class="ui-block-c" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>Network</p>
-                                </div>
-                                <div class="ui-block-d" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>etc....</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
             </section>
     <hr/>
-            <section id="questions">
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >  <!-- COLLAPSED -->
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Wk#1: Discussion Questions</h3>
-                        <p class="bold">1) What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only? (just a hint - iOS can be the tricky one)</p>
-                        <p class="indent">For the Android devices and while using PhoneGap you can access all of the native features.</p>  
-                        
-                        <p class="cite">O’Reilly Media, Inc. (n.d.).<i>Building android apps with html, css, and javascript.</i> Retrieved from <a data-rel="extrenal" target="_blank" href="http://ofps.oreilly.com/titles/9781449383268/ch07_id35817064.html"> http://ofps.oreilly.com/titles/9781449383268/ch07_id35817064.html </a></p>
-                        
-                        <p class="indent">For iOS devices and while using PhoneGap you can access the Gyroscope, with six-axis motion sensing, Digital compass, Multitasking, Geolocation (GPS), Accelerometer, Audio and Video Capture, VoIP, SMS, Push notifications, FaceTime standard, Contacts, Camera and Touch screen interfaces</p>
-                        <p class="cite">Clark, S. (n.d.). <i>iphone special developer report.</i> Retrieved from <a data-rel="extrenal" target="_blank" href="http://www.htmlgoodies.com/beyond/webmaster/article.php/3893906"> http://www.htmlgoodies.com/beyond/webmaster/article.php/3893906 </a></p>
-                    
-                        <p class="bold">2) For your CRUD app revision, which of these do you think you will implement?</p>
-                            <p class="indent">I will need the camera for my app revision</p>
-                        
-                        <p class="bold">3) Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.</p>
-                            <p class="indent">Too much on your plate at once leads to confusion.  Layout a plan and try not to get side-tracked.</p>
-                        
-                        <p class="bold">4) Please describe any design intentions you may have for the AVF Demo app and the revised/new version of your CRUD app.</p>
-                            <p class="indent">My revised app need the camera.  My new app idea will need the GPS.</p>
-                        
-                        <p class="bold">5) If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.</p>
-                            <p class="indent">I would love to add it all, but with such little time in each class I doubt I will get to implement them all.</p>
-                            
-                        <div class="ui-grid-a">
-                            <p><a data-rel="extrenal" target="_blank" href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityId=664499&deliveryId=1334507" data-role="button" class="ui-block-b" data-theme="e" id="wk1" class="Qbtn">Go To Website</a></p>
-                        </div>
-                    </div>
-                    
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Wk#2: Discussion Questions</h3>
-                        <p class="bold">1) What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)
-                        </p>
-                            <p class="indent">Provide a consistent layout and structure common layout themes used across the web and other mobile devices. (The main elements of the page—banner, navigation, sidebar—should appear in the same locations throughout the app.)</p>
-                            <p class="indent">Use the Section tags and headers will help screen readers navigate and read through my App.</p>
-                        
-                        <p class="bold">2) 
-                        Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?
-                        </p>
-                            <p class="indent">The audio is horrible. (I have no idea on how to access a screen reader let alone change the voice.)</p>
-                            <p class="indent">Icon sizes and spacing. (I could increase the icon sizes and spaces when building the App)</p>
-                            <p class="indent">read on touch Up (I could write my code to activate buttons on touch up)</p>
+    	<section id="questions">
+			<div data-role="content">
+				<div data-role="collapsible-set" data-theme="b">
+					<!-- COLLAPSED -->
+					<div data-role="collapsible" class="highlight">
+						<h3>Wk#1: Discussion Questions</h3>
+						<p class="bold">1) What types of native features (on Android
+							and iOS devices) would you be able to implement with the use of
+							HTML/CSS/JS only? (just a hint - iOS can be the tricky one)</p>
+						<p class="indent">For the Android devices and while using
+							PhoneGap you can access all of the native features.</p>
 
-                        <p class="bold">3)
-                        Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.
-                        </p>
-                            <p class="indent">Droid 2 (Text to Speech, Power button to End calls, Talkback)</p>
-                            <p class="indent">iPad (Voiceover and Zoom)</p>
+						<p class="cite">
+							O’Reilly Media, Inc. (n.d.).<i>Building android apps with
+								html, css, and javascript.</i> Retrieved from <a data-rel="extrenal"
+								target="_blank"
+								href="http://ofps.oreilly.com/titles/9781449383268/ch07_id35817064.html">
+								http://ofps.oreilly.com/titles/9781449383268/ch07_id35817064.html
+							</a>
+						</p>
 
-                        <p class="bold">4)
-                        Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</p>
-                            <p class="indent">Mobile Accessibility for Android (10 common Apps using larger icons and a reader)</p>
-                            <p class="indent">Mobile Magnifier (Screen magnifier)</p>
-                            <p class="indent">Mobile Speak (Screen reader)</p>
-                        
-                        <div class="ui-grid-a">
-                            <p><a data-rel="extrenal" target="_blank" href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&activityId=664511&deliveryId=1334519" data-role="button" class="ui-block-b" data-theme="e" id="wk1" class="Qbtn">Go To Website</a></p>
-                        </div>
-                    </div>
-                    
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Wk#3: Discussion Questions</h3>
-                        <p class="bold">Question Placeholder</p>
-                        <p class="indent">Test Answer</p>
-                    </div>
-                </div>
-            </div>
-            </section>
-    <hr/>
-            <section id="videos">
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >  
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Video 1</h3>	
-                      	<!--  <video  width="100%" src="AVF-wk1.webm" type='video/webm; codecs="vp8, vorbis"' > -->
-                        	<!--  <source src="AVF-wk1.mp4" />  -->
-                        	<!--  <source src="AVF-wk1.webm" type='video/webm; codecs="vp8, vorbis"' />  
+						<p class="indent">For iOS devices and while using PhoneGap you
+							can access the Gyroscope, with six-axis motion sensing, Digital
+							compass, Multitasking, Geolocation (GPS), Accelerometer, Audio
+							and Video Capture, VoIP, SMS, Push notifications, FaceTime
+							standard, Contacts, Camera and Touch screen interfaces</p>
+						<p class="cite">
+							Clark, S. (n.d.). <i>iphone special developer report.</i>
+							Retrieved from <a data-rel="extrenal" target="_blank"
+								href="http://www.htmlgoodies.com/beyond/webmaster/article.php/3893906">
+								http://www.htmlgoodies.com/beyond/webmaster/article.php/3893906
+							</a>
+						</p>
+
+						<p class="bold">2) For your CRUD app revision, which of these
+							do you think you will implement?</p>
+						<p class="indent">I will need the camera for my app revision</p>
+
+						<p class="bold">3) Briefly describe some past 'lessons
+							learned' regarding workflow as it relates to research, design,
+							development, etc.</p>
+						<p class="indent">Too much on your plate at once leads to
+							confusion. Layout a plan and try not to get side-tracked.</p>
+
+						<p class="bold">4) Please describe any design intentions you
+							may have for the AVF Demo app and the revised/new version of your
+							CRUD app.</p>
+						<p class="indent">My revised app need the camera. My new app
+							idea will need the GPS.</p>
+
+						<p class="bold">5) If not covered above, please also describe
+							any functionality intentions you may have for both the AVF Demo
+							app and the revised/new version of your CRUD app.</p>
+						<p class="indent">I would love to add it all, but with such
+							little time in each class I doubt I will get to implement them
+							all.</p>
+
+						<div class="ui-grid-a">
+							<p>
+								<a data-rel="extrenal" target="_blank"
+									href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&amp;activityId=664499&amp;deliveryId=1334507"
+									data-role="button" class="ui-block-b" data-theme="e" id="wk1"
+									class="Qbtn">Go To Website</a>
+							</p>
+						</div>
+					</div>
+
+					<div data-role="collapsible" class="highlight">
+						<h3>Wk#2: Discussion Questions</h3>
+						<p class="bold">1) What are some of the ways that you could
+							change your HTML on your Demo app to be more accessible?
+							(Remember, you can use the Section tag with jQuery, for instance)
+						</p>
+						<p class="indent">Provide a consistent layout and structure
+							common layout themes used across the web and other mobile
+							devices. (The main elements of the page—banner, navigation,
+							sidebar—should appear in the same locations throughout the app.)</p>
+						<p class="indent">Use the Section tags and headers will help
+							screen readers navigate and read through my App.</p>
+
+						<p class="bold">2) Visit a video service on the web (like
+							YouTube) and search for "Screen Reader Demo" and "Mobile Screen
+							Reader" - what are some of the common frustrations (or common
+							support mechanisms) that you see among the examples that are
+							given - how could you fix them (or use them)?</p>
+						<p class="indent">The audio is horrible. (I have no idea on
+							how to access a screen reader let alone change the voice.)</p>
+						<p class="indent">Icon sizes and spacing. (I could increase
+							the icon sizes and spaces when building the App)</p>
+						<p class="indent">read on touch Up (I could write my code to
+							activate buttons on touch up)</p>
+
+						<p class="bold">3) Devices: Please list two devices (and some
+							of their features) that are made specifically to support
+							Accessibility.</p>
+						<p class="indent">Droid 2 (Text to Speech, Power button to End
+							calls, Talkback)</p>
+						<p class="indent">iPad (Voiceover and Zoom)</p>
+
+						<p class="bold">4) Mobile Apps: Please list two apps (either
+							Android or iOS, or both) that are made specifically to support
+							Accessibility.</p>
+						<p class="indent">Mobile Accessibility for Android (10 common
+							Apps using larger icons and a reader)</p>
+						<p class="indent">Mobile Magnifier (Screen magnifier)</p>
+						<p class="indent">Mobile Speak (Screen reader)</p>
+
+						<div class="ui-grid-a">
+							<p>
+								<a data-rel="extrenal" target="_blank"
+									href="http://course.online.fullsail.edu/index.cfm?fuseaction=lms.activitiesDiscussion&amp;activityId=664511&amp;deliveryId=1334519"
+									data-role="button" class="ui-block-b" data-theme="e" id="wk1"
+									class="Qbtn">Go To Website</a>
+							</p>
+						</div>
+					</div>
+
+					<div data-role="collapsible" class="highlight">
+						<h3>Wk#3: Discussion Questions</h3>
+						<p class="bold">Question Placeholder</p>
+						<p class="indent">Test Answer</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<section id="videos">
+			<div data-role="content">
+				<div data-role="collapsible-set" data-theme="b">
+					<div data-role="collapsible" class="highlight">
+						<h3>Video 1</h3>
+						<!--  <video  width="100%" src="AVF-wk1.webm" type='video/webm; codecs="vp8, vorbis"' > -->
+						<!--  <source src="AVF-wk1.mp4" />  -->
+						<!--  <source src="AVF-wk1.webm" type='video/webm; codecs="vp8, vorbis"' />  
                         
                         </video> -->
-                     <!--     <video onclick="this.play();" controls="controls" height="200" width="300" poster="images/me.jpg" autobuffer >
+						<!--     <video onclick="this.play();" controls="controls" height="200" width="300" poster="images/me.jpg" autobuffer >
                         <source src="AVF-wk1.webm" />
                         </video > -->
-                    </div>
-                    
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Video 2</h3>
-                        <p class="bold">Video Placeholder</p>
-                    
-                    </div>
-                    
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Video 3</h3>
-                        <p class="bold">Video Placeholder</p>
-                
-                    </div>
-                    <div data-role="collapsible" class="highlight"> 
-                        <h3>Video 4</h3>
-                        <p class="bold">Video Placeholder</p>
-                
-                    </div>
-                </div>
-            </div>
-            </section>
-            
-        <footer>
-            <h4>Full Sail Online   03/08/12</h4>
-        </footer>
 
-        </div> <!-- ////////////end home page div//////////////  -->
+						<!--  <iframe src="http://www.youtube.com/embed/_M022U4zg5g"
+   							width="320" height="190"></iframe>  -->
+					</div>
+
+					<div data-role="collapsible" class="highlight">
+						<h3>Video 2</h3>
+						<p class="bold">Video Placeholder</p>
+
+					</div>
+
+					<div data-role="collapsible" class="highlight">
+						<h3>Video 3</h3>
+						<p class="bold">Video Placeholder</p>
+
+					</div>
+					<div data-role="collapsible" class="highlight">
+						<h3>Video 4</h3>
+						<p class="bold">Video Placeholder</p>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<h4>Full Sail Online 03/15/12</h4>
+		</footer>
+
+	</div>
+	<!-- ////////////end home page div//////////////  -->
+
         
          <div  data-role="page" id="geopg" >
              <div data-role="header" >
                  <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
-                 <h1> Geolocation Test Page </h1>
+                 <h1>Geolocation</h1>
              </div> 
              
-             <section id="geoData">
+             <section id="geoData"  class="testButtons">
                  <div class="ui-grid-b">
                      <p class="ui-block-a"></p>
-                     <p class="ui-block-b" data-role="button" data-theme="e" id="testBtn" >Geolocation</p>  
+                     <p class="ui-block-b" data-role="button" data-theme="e" id="testBtn" >Test</p>  
                  </div>
                  <p id="geolocation" class="highlight"></p> 
-                 <p> I Don't know why I keep getting the CODE:2 error.  I gave it the AndroidManifest access the web says it is suppose to have.</p>
              </section>         
         </div> <!-- //////////////////end native page div///////////////  -->
 
@@ -233,27 +268,88 @@
             
             <div data-role="header" >
                 <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
-                <h1> Alert Test Page </h1>
+                <h1>Alert Page</h1>
             </div> 
                     
             
-            <section id="alertData">
+            <section id="alertData" class="testButtons">
                 <div class="ui-grid-b">
                         <p class="ui-block-a"></p>
-                        <p class="ui-block-b" data-role="button" data-theme="e" id="alertBtn" >Test Alert</p>  
+                        <p class="ui-block-b" data-role="button" data-theme="e" id="alertBtn" >Test</p>  
                        
                     </div>
             </section>
             
           
       
-        </div> <!-- //////////////////end native page div///////////////  -->
+        </div> <!-- //////////////////end alert page div///////////////  -->
 
-		<!-- JavaScript under here -->
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
-		<script src="js/jquery.validate.min.js" type="text/javascript"></script>	
-		<script src="js/main.js" type="text/javascript"></script>  
-        <script src="js/geo.js" type="text/javascript"></script> 
-	</body>
-    <html/>
+        
+        <div  data-role="page" id="accelpg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1>Accelerometer</h1>
+            </div> 
+            
+             <section id="accelBtnSection" class="testButtons">
+                <div class="ui-grid-b">
+                    <p class="ui-block-a"></p>
+                    <p class="ui-block-b" data-role="button" data-theme="e" id="accelBtn" >Test Me</p>  
+                    
+                </div>
+            </section>
+            
+            <p id="accelData" class="highlight" ></p> 
+            
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+        
+        <div  data-role="page" id="camerapg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1>Camera Page</h1>
+            </div> 
+            
+            <section id="cameraTake" class="testButtons">
+                <div class="ui-grid-b">
+                    <p class="ui-block-a"></p>
+                    <p class="ui-block-b" data-role="button" data-theme="e" id="takePhotoBtn" >Take Photo</p>  
+                    
+                </div>
+            </section>
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+        
+        <div  data-role="page" id="connectionpg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1>Connection</h1>
+            </div> 
+            
+            <section id="cameraTake" class="testButtons">
+                <div class="ui-grid-b">
+                    <p class="ui-block-a"></p>
+                    <p class="ui-block-b" data-role="button" data-theme="e" id="detect" >Detect</p>  
+                    
+                </div>
+            </section>
+             
+             
+             <p id="detectPost" class="highlight" ></p> 
+           
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="phonegap-1.4.1.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<script src="js/geo.js" type="text/javascript"></script>
+</body>
+</html>
+<html />

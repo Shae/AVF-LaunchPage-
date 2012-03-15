@@ -35,69 +35,44 @@
             <h2>Shae B. R. Klusman</h2>
             <h3>Class: AVF1203</h3>
         </header>
-            <!-- <div data-role="content"> -->
+  
        
        <hr/>		
+            <section id="apps" >
+                <div data-role="content" class="highlight">
+                    <div class="ui-grid-c" class="highlight">
+                        <div class="ui-block-a"  style="text-align: center;"><a data-rel="extrenal" target="_blank"  href="https://shae.cloudant.com/kidkoder/_design/kidkoder/index2.html"><img src="images/block.png" alt="" id="" class="holder"/> </a>
+                            <p>Old CRUD</p>
+                        </div>
+                        <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
+                            <p>New CRUD</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <hr/>
             <section id="features">
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >
-                    <div data-role="collapsible" class="highlight" > 
-                        <h2>C.R.U.D.  Apps</h2>					
-                            <div class="ui-grid-c" >
-                                <div class="ui-block-a"  style="text-align: center;"><a data-rel="extrenal" target="_blank"  href="https://shae.cloudant.com/kidkoder/_design/kidkoder/index2.html"><img src="images/block.png" alt="" id="" class="holder"/> </a>
-                                    <p>Old CRUD</p>
-                                </div>
-                                <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                                    <p>New CRUD</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b" >
-                    <div data-role="collapsible" class="highlight"> 
-                        <h2>iOS Native Features</h2>					
-                            <div class="ui-grid-c">
-                                <div class="ui-block-a" style="text-align: center;"><a href="#alertpg"><img src="images/PHolder.png" alt="" id="" class="holder"/></a>
-                                    <p>Alert</p>
-                                </div>
+                <div data-role="content" class="highlight">       					
+                    <div class="ui-grid-c">
+                        <div class="ui-block-a" style="text-align: center;"><a href="#alertpg"><img src="images/alert.png" alt="" id="" class="holder"/></a>
+                            <p>Alert</p>
+                        </div>
 
-                                <div class="ui-block-b"  style="text-align: center;"><a href="#geopg" ><img src="images/PHolder.png" alt="" id="" class="holder"/></a>
-                                    <p>Geo</p>
-                                </div>
+                        <div class="ui-block-b"  style="text-align: center;"><a href="#geopg" ><img src="images/geo.png" alt="" id="" class="holder"/></a>
+                            <p>Geo</p>
+                        </div>
 
-                                <!-- <div class="ui-block-c" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder"/>
-                                    <p>Accelerometer</p>  
-       
-                                </div> -->
-                            </div>
+                         <div class="ui-block-c" style="text-align: center;"><a href="#accelpg"><img src="images/accel2.png" alt="" id="" class="holder"/></a>
+                            <p>Accelerometer</p>  
+                        </div>
+                        <div class="ui-block-a" style="text-align: center;"><a href="#camerapg"><img src="images/camera.png" alt="" id="" class="holder" /></a>
+                            <p>Camera</p>
+                        </div>
+                        <div class="ui-block-b" style="text-align: center;"><a href="#connectionpg"><img src="images/Network.png" alt="" id="" class="holder" /></a>
+                            <p>Network</p>
+                        </div>       
                     </div>
                 </div>
-            </div>
-            
-            <div data-role="content">
-                <div data-role="collapsible-set" data-theme="b">
-                    <div data-role="collapsible" class="highlight"> 
-                        <h2>More iOS Native Features</h2>					
-                            <div class="ui-grid-c">
-                                <div class="ui-block-a" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                                    <p>Contacts</p>
-                                </div>
-                                <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                                    <p>Camera</p>
-                                </div>
-                                <div class="ui-block-c" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                                    <p>Network</p>
-                                </div>
-                                <div class="ui-block-d" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                                    <p>etc....</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
             </section>
     <hr/>
             <section id="questions">
@@ -210,7 +185,7 @@
                  <h1> Geolocation Test Page </h1>
              </div> 
              
-             <section id="geoData">
+             <section id="geoData"  class="testButtons">
                  <div class="ui-grid-b">
                      <p class="ui-block-a"></p>
                      <p class="ui-block-b" data-role="button" data-theme="e" id="testBtn" >Geolocation</p>  
@@ -229,7 +204,7 @@
             </div> 
                     
             
-            <section id="alertData">
+            <section id="alertData" class="testButtons">
                 <div class="ui-grid-b">
                         <p class="ui-block-a"></p>
                         <p class="ui-block-b" data-role="button" data-theme="e" id="alertBtn" >Test Alert</p>  
@@ -239,13 +214,64 @@
             
           
       
-        </div> <!-- //////////////////end native page div///////////////  -->
+        </div> <!-- //////////////////end alert page div///////////////  -->
 
+        
+        <div  data-role="page" id="accelpg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1> Accelerometer Test Page </h1>
+            </div> 
+            
+            <p id="accelerometer" class="highlight" class="testButtons" ></p> 
+            
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+        
+        <div  data-role="page" id="camerapg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1> Camera Test Page </h1>
+            </div> 
+            
+            <section id="cameraTake" class="testButtons">
+                <div class="ui-grid-b">
+                    <p class="ui-block-a"></p>
+                    <p class="ui-block-b" data-role="button" data-theme="e" id="takePhotoBtn" >Take Photo</p>  
+                    
+                </div>
+            </section>
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+        
+        <div  data-role="page" id="connectionpg" >
+            
+            <div data-role="header" >
+                <a data-theme="a" data-role="button" href="#home" data-icon="home" data-iconpos="notext" data-corners="true" data-shadow="false" data-iconshadow="true" ></a>
+                <h1> Connection Test Page </h1>
+            </div> 
+            
+            <section id="cameraTake" class="testButtons">
+                <div class="ui-grid-b">
+                    <p class="ui-block-a"></p>
+                    <p class="ui-block-b" data-role="button" data-theme="e" id="detect" >Detect Connection</p>  
+                    
+                </div>
+            </section>
+             
+             
+             <p id="detectPost" class="highlight" ></p> 
+           
+            
+        </div> <!-- //////////////////end accel page div///////////////  -->
+        
 		<!-- JavaScript under here -->
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+        <script src="phonegap-1.4.1.js" type="text/javascript"></script>
 		<script src="js/jquery.validate.min.js" type="text/javascript"></script>	
-		<script src="js/main.js" type="text/javascript"></script>  
         <script src="js/geo.js" type="text/javascript"></script> 
 	</body>
     <html/>

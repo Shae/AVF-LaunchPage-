@@ -1,9 +1,112 @@
 
+//////////////////CONNECTION TYPE////////////////
+function detectConnection() {
+    var networkState = navigator.network.connection.type;
+    var postIt = document.getElementById('detectPost');
+    var states = {};
+    states[Connection.UNKNOWN] = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI] = 'WiFi connection';
+    states[Connection.CELL_2G] = 'Cell 2G connection';
+    states[Connection.CELL_3G] = 'Cell 3G connection';
+    states[Connection.CELL_4G] = 'Cell 4G connection';
+    states[Connection.NONE] = 'No network connection';
+    postIt.innerHTML = 'Connection type: ' + states[networkState];
+}
+
+
+//////////// CAMERA /////////////////////
+function onFailPhoto(error) {
+    window.alert("Fail when getting image. Code = " + error.code);
+}
+
+function onSuccessPhoto(imageURI) {
+    window.alert("Image taken");
+}
+
+function getImage() {
+    window.alert("reaching this point");
+    navigator.device.capture.captureImage(onSuccessPhoto, onFailPhoto) ;
+}
+
+
+
+
+////////////////////////  Movement ///////////////////
+window.ondevicemotion = function(event) {
+    
+    var element = document.getElementById('accelerometer');
+    
+    element.innerHTML = 
+    'Acceleration X: ' + event.accelerationIncludingGravity.x + '<br />' +
+    'Acceleration Y: ' + event.accelerationIncludingGravity.y + '<br />' +
+    'Acceleration Z: ' + event.accelerationIncludingGravity.z + '<br />' ;
+};
+
+///////////////////////////////////////////////////
+/*
+ // The watch id references the current `watchAcceleration`
+var watchID = null;
+
+
+
+// PhoneGap is ready
+//
+function onDeviceReadyA() {
+    window.alert("step 1");  
+    startWatchA();
+}
+
+// Start watching the acceleration
+//
+function startWatchA() {
+    window.alert("step 2");  
+    
+    window.ondeviceorientation = function(event) {
+        window.alert(event.alpha);
+        window.alert(event.beta);
+        window.alert(event.gamma);
+    };
+    // Update acceleration every 3 seconds
+    var optionsA = { frequency: 1000 };
+    
+    watchID = navigator.accelerometer.watchAcceleration(onSuccessA, onErrorA, optionsA);
+}
+
+// Stop watching the acceleration
+//
+function stopWatchA() {
+    if (watchID) {
+        navigator.accelerometer.clearWatch(watchID);
+        watchID = null;
+    }
+}
+
+// onSuccess: Get a snapshot of the current acceleration
+//
+function onSuccessA(acceleration) {
+    window.alert("step 3");  
+    var element = document.getElementById('accelerometer');
+    element.innerHTML = 
+    'Acceleration X: ' + acceleration.x + '<br />' +
+    'Acceleration Y: ' + acceleration.y + '<br />' +
+    'Acceleration Z: ' + acceleration.z + '<br />' +
+    'Timestamp: '      + acceleration.timestamp + '<br />';
+}
+
+// onError: Failed to get the acceleration
+//
+function onErrorA() {
+    window.alert("error");  
+    alert('onErrorA!');
+}
+*/
+//////////////////////////////////////////////////////////// GEO////////////////////////////////////////
 
 // onError Callback receives a PositionError object
 //
 function onError(error) {
-    alert('code: '    + error.code    + '\n' +
+    window.alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');
 }
 
@@ -23,7 +126,7 @@ function onSuccess(position) {
         //'Speed: '              + position.coords.speed                 + '<br />' +
         'Timestamp: '          + new Date(position.timestamp)          + '<br />';
     
-    // initialize();
+
    
 }
 
@@ -31,42 +134,37 @@ function onSuccess(position) {
 //
 
 function getPosition() {
-   // window.alert("test Device Rdy");        
+      
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
     
 }
 
+///////////////////////END GEO////////////////////////////////
 
-
-
-/*
-// Wait for PhoneGap to load
-//
-document.addEventListener("deviceready", onDeviceReady, false);
-*/
 
 $("#testBtn").live("click", function(e) {
-
-       //navigator.notification.alert("the message!", callbackFunction, "the title!", "button text!");
     getPosition();
-       // navigator.notification.alert("the nav message!");
-       // alert("Test Alert Message");
-       // console.log("console message");
-       // window.alert("window test1");             
+           
     });
 
 
 $("#alertBtn").live("click", function(e) {
-                   
-        //navigator.notification.alert("the message!", callbackFunction, "the title!", "button text!");
-        // navigator.notification.alert("the nav message!");
-        // alert("Test Alert Message");
-        // console.log("console message");
     window.alert("This is a test.  This is only a test of the iOS window ALERT system.");   
-   // window.confirm("Looky!  A confirm button too!"); 
+
 });
 
 
 $("#backBtn").live("click", function(e) {
-       window.history.back()
+   window.history.back();
 });
+
+$("#takePhotoBtn").live("click", function(e) {
+  getImage();
+    // capturePhoto();
+});
+
+$("#detect").live("click", function(e) {
+    detectConnection();
+});
+
+
