@@ -14,7 +14,6 @@ function detectConnection() {
     postIt.innerHTML = 'Connection type: ' + states[networkState];
 }
 
-
 //////////// CAMERA /////////////////////
 function onFailPhoto(error) {
     window.alert("Fail when getting image. Code = " + error.code);
@@ -25,7 +24,7 @@ function onSuccessPhoto(imageURI) {
 }
 
 function getImage() {
-    window.alert("reaching this point");
+    // window.alert("reaching this point");
     navigator.device.capture.captureImage(onSuccessPhoto, onFailPhoto) ;
 }
 
