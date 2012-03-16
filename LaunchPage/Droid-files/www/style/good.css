@@ -28,6 +28,13 @@
 
 }
 
+.ui-page{
+ background: #000 url(../images/BGtest4.png) repeat;
+}
+
+.red{
+	font-color: red;
+}
 
 h2{
 	margin-top: 0;
