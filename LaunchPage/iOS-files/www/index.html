@@ -26,7 +26,7 @@
     
     <body >
         <div  data-role="page" id="home" >
-        <style type="text/css">.ui-page { background: transparent url(images/BGtest4.png);}</style>
+        <!-- <style type="text/css">.ui-page { background: transparent url(images/BGtest4.png);}</style>  -->
         
 
         <header>
@@ -44,8 +44,8 @@
                         <div class="ui-block-a"  style="text-align: center;"><a data-rel="extrenal" target="_blank"  href="https://shae.cloudant.com/kidkoder/_design/kidkoder/index2.html"><img src="images/block.png" alt="" id="" class="holder"/> </a>
                             <p>Old CRUD</p>
                         </div>
-                       <!-- <div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
-                            <p>New CRUD</p>  
+                        <!--<div class="ui-block-b" style="text-align: center;"><img src="images/PHolder.png" alt="" id="" class="holder" onclick="window.alert('nothing here yet!')"/>
+                            <p>New CRUD</p>
                         </div>  -->
                     </div>
                 </div>
@@ -65,6 +65,12 @@
                          <div class="ui-block-c" style="text-align: center;"><a href="#accelpg"><img src="images/accel2.png" alt="" id="" class="holder"/></a>
                             <p>Accelerometer</p>  
                         </div>
+                     </div>
+                  </div>
+         	<hr/>
+                  <div data-role="content" class="highlight">  
+                   <h2 class="red">Works on both iOS and Android</h2> <br/>    					
+                    <div class="ui-grid-c">
                         <div class="ui-block-a" style="text-align: center;"><a href="#camerapg"><img src="images/camera.png" alt="" id="" class="holder" /></a>
                             <p>Camera</p>
                         </div>
@@ -148,21 +154,24 @@
             <section id="videos">
             <div data-role="content">
                 <div data-role="collapsible-set" data-theme="b" >  
-                    <div data-role="collapsible" class="highlight"> 
+                     <div data-role="collapsible" class="highlight"> 
                         <h3>Video 1</h3>	
-                        <video src="AVF-wk1.m4v" width="375" height="280" controls></video>
+                         <object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/_M022U4zg5g?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/kJ0sfEkAWMw?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360">
+                        </object>
                     </div>
-                    
+                   
                     <div data-role="collapsible" class="highlight"> 
                         <h3>Video 2</h3>
-                        <object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/_M022U4zg5g?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/_M022U4zg5g?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object>
+                        <object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/_M022U4zg5g?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/_M022U4zg5g?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360">
+                        </object>
                     
                     </div>
                     
                     <div data-role="collapsible" class="highlight"> 
                         <h3>Video 3</h3>
-                        <p class="bold">Video Placeholder</p>
-                
+                         <object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/Hc0DWt2GTjM?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/Hc0DWt2GTjM?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360">
+                         </object>
+                     
                     </div>
                     <div data-role="collapsible" class="highlight"> 
                         <h3>Video 4</h3>
@@ -174,7 +183,7 @@
             </section>
             
         <footer>
-            <h4>Full Sail Online   03/08/12</h4>
+            <h4>Full Sail Online   03/15/12</h4>
         </footer>
 
         </div> <!-- ////////////end home page div//////////////  -->
